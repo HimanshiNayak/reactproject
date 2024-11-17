@@ -1,0 +1,80 @@
+.menu-container {
+  background-color: #3f1f07;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0; 
+    min-height: 100vh;
+  }
+  
+  .menu {
+    width: 90%; 
+    max-width: 900px;
+    background: url('../Images/wp2.jpg'); 
+    border-radius: 12px;
+   
+    padding: 30px 40px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    margin:auto;
+  }
+  
+  .menu-title {
+    font-size: 2.2rem;
+    text-align: center;
+    color: #925513;
+    margin-top:30px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+  }
+  
+  .menu-section {
+    margin-bottom: 35px;
+  }
+  
+  .menu-section h2 {
+    font-size: 1.8rem;
+    color: #b78271; 
+    border-bottom: 2px solid #d7ccc8; 
+    padding-bottom: 8px;
+    margin-bottom: 18px;
+  }
+  
+  .section-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+    background-color: #fff3e0; 
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-item:hover {
+    background-color: #ffecb3;
+  }
+  .menu-item:hover .item-name {
+    color: #3e2723; 
+  }
+  
+  .item-name {
+    font-weight: 600;
+    color: #3e2723;
+  }
+  
+  
+  .item-price {
+    color: #5d4037;
+    font-weight: 400;
+  }
+  
+  .menu-section:last-child {
+    margin-bottom: 0;
+  }
+  

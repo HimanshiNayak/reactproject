@@ -1,0 +1,113 @@
+/* Container for the entire gallery section */
+.gallery-container {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+     /* Deep chocolate brown for gallery background */
+    color: #f8ece3; /* Cream color for text readability */
+    border-radius: 12px;
+    background: url('../Images/wp2.jpg');
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Heading for the gallery */
+.gallery-container h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #e3c4a8; /* Muted beige for refined contrast */
+    letter-spacing: 1.5px;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+/* Individual sections within the gallery (e.g., Appetizers, Main Courses) */
+.gallery-section {
+    margin-bottom: 3.5rem;
+}
+
+/* Section title styling */
+.section-title {
+    font-size: 2rem;
+    color: #e3c4a8;
+    border-bottom: 3px solid #d4a17a; /* Light brown border for sophistication */
+    padding-bottom: 0.75rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Gallery grid layout for items */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjusted to fit four items in a row */
+    gap: 1.5rem; /* Reduced gap to make layout more compact */
+}
+
+/* Individual gallery item styling */
+.gallery-item {
+    background-color: #3d2c29; /* Dark chocolate background for item cards */
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 1.2rem; /* Slightly smaller padding */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Gallery item image styling */
+.item-image {
+    width: 100%;
+    height: 180px; /* Slightly smaller height for compact gallery effect */
+    object-fit: cover;
+    filter: brightness(0.85);
+    transition: filter 0.3s ease;
+}
+
+.gallery-item:hover .item-image {
+    filter: brightness(1); /* Brighten image on hover */
+}
+
+/* Gallery item name styling */
+.items-name {
+    font-weight: 700;
+    font-size: 1.1rem; /* Slightly smaller font */
+    color: #f8ece3; /* Cream color for elegant contrast */
+    margin: 0.8rem 0 0.4rem;
+    text-align: center;
+    letter-spacing: 0.8px;
+    text-transform: capitalize;
+}
+
+/* Optional description styling for gallery items */
+.item-description {
+    font-size: 0.9rem; /* Reduced font size for compact look */
+    color: #d3bda7; /* Light beige for readability */
+    text-align: center;
+    padding: 0 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+/* Gallery item price styling */
+.item-price {
+    font-weight: 700;
+    color: #d4a17a; /* Light brown for pricing to match border styling */
+    font-size: 1rem; /* Reduced font size for compact look */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Overall text and font refinements */
+ h2, .section-title, .items-name, .item-price {
+    font-family: 'Playfair Display', serif; /* Elegant serif font for upscale feel */
+}
+
+.gallery-container, .gallery-item, .item-description, .item-price {
+    font-family: 'Roboto', sans-serif;
+}

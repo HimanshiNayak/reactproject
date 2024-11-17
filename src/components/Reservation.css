@@ -1,0 +1,110 @@
+/* Reservation.css */
+
+.reservation-container {
+    padding: 3rem;
+    max-width: 1900px; /* Wider form container */
+    margin: 4.6rem auto;
+    text-align: center;
+    background-color: #392507;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Softer shadow */
+    border-radius: 10px;
+    border: 1px solid #ebd4b1;
+}
+
+.reservation-container h2 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    color: #b5651d;
+    font-weight: bold;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* More space between fields */
+}
+
+.input {
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+    width: 500px;
+}
+
+.input:focus {
+    border-color: #b5651d; /* Highlighted border on focus */
+    outline: none;
+}
+
+.submit-button {
+    padding: 1.2rem;
+    font-size: 1.3rem;
+    color: white;
+    background-color: #b5651d;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+/* Hover Effect for Button */
+.submit-button:hover {
+    background-color: #8a4711;
+    transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+.error-message {
+    color: rgb(252, 235, 51); /* Change color to red */
+    margin-top: 1rem; /* Add some space above the error message */
+    font-weight: bold; /* Make the font bold */
+    font-size: 20px;
+}
+/* Responsive Design */
+@media (max-width: 992px) {
+    .reservation-container {
+        max-width: 80%;
+    }
+    
+    .reservation-container h2 {
+        font-size: 2.2rem;
+    }
+
+    .input, .submit-button {
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .reservation-container {
+        max-width: 90%;
+        padding: 2.5rem;
+    }
+
+    .reservation-container h2 {
+        font-size: 2rem;
+    }
+
+    .input, .submit-button {
+        font-size: 1rem;
+        padding: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .reservation-container {
+        padding: 2rem;
+    }
+
+    .reservation-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .input, .submit-button {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+}
